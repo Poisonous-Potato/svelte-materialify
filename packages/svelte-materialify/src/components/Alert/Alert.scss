@@ -69,8 +69,8 @@
   }
 
   &.dense {
-    padding-top: $alert-padding / 2;
-    padding-bottom: $alert-padding / 2;
+    padding-top: calc($alert-padding / 2);
+    padding-bottom: calc($alert-padding / 2);
 
     .s-alert__border {
       border-width: $alert-dense-border-width;

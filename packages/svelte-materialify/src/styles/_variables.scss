@@ -46,7 +46,7 @@ $grid-breakpoints: () !default;
 $display-breakpoints: () !default;
 
 $container-max-widths: () !default;
-$container-padding-x: $grid-gutter / 2 !default;
+$container-padding-x: calc($grid-gutter / 2) !default;
 
 $transitions: () !default;
 
@@ -60,7 +60,7 @@ $material-dark-theme: () !default;
 $rounded: map-deep-merge(
   (
     0: 0,
-    'sm': $border-radius-root / 2,
+    'sm': calc($border-radius-root / 2),
     null: $border-radius-root,
     'lg': $border-radius-root * 2,
     'xl': $border-radius-root * 6,
@@ -205,10 +205,10 @@ $grid-breakpoints: map-deep-merge(
 
 $grid-gutters: map-deep-merge(
   (
-    'xs': $grid-gutter / 12,
-    'sm': $grid-gutter / 6,
-    'md': $grid-gutter / 3,
-    'lg': $grid-gutter * 2/3,
+    'xs': calc($grid-gutter / 12),
+    'sm': calc($grid-gutter / 6),
+    'md': calc($grid-gutter / 3),
+    'lg': calc($grid-gutter * 2 / 3),
     'xl': $grid-gutter,
   ),
   $grid-gutters
