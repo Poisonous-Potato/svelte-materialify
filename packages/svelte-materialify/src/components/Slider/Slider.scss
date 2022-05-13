@@ -88,8 +88,8 @@
   position: absolute;
   width: $slider-thumb-size;
   height: $slider-thumb-size;
-  right: -$slider-thumb-size / 2 + 1;
-  top: -$slider-thumb-size / 2 + 1;
+  right: -1 * calc($slider-thumb-size / 2) + 1;
+  top: -1 * calc($slider-thumb-size / 2) + 1;
   border-radius: $slider-thumb-border-radius;
   background: currentColor;
   cursor: default;
